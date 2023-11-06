@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    }
+    
+:root{
+
+    --primary-color: #9fcaff;
+    --onPrimaryColor: #003258;
+    
+    --primaryContainer: #00497d;
+    --onPrimaryContainer: #d1e4ff;
+    
+    --background-color: #1a1c1e;
+    --onBackground-color: #e2e2e6;
+
+
+
+}
+
+    .flex-container{
+    
+    display: flex;
+    width: 100vw;
+    height: 200vh;
+    background: var(--background-color);
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--onPrimaryContainer);
+    
+    }
+    
+    
+    .item{
+        width: 100px;
+        height: 50px;
+        background: var(--primaryContainer);
+        margin: 1vw;
+        text-align: center;
+    
+    
+    }
+
+
+    .img-holder{
+        width: 85vw;
+        height: 30vw;
+        background: var(--primary-color);
+        border-style: solid;
+    border-radius: 5%;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 8vw;
+    background-image:url(../Media/images/cover.jpg) ;
+    background-size: cover;
+    background-position: center;
+    }
+
+    
+    
+    
+    
+
+.header{
+    background-color: var(--primary-color);
+    animation: changeBG 10s 3s infinite;
+}
+
+    .bar{
+        width: 2000px;
+        height: 100px;
+        background: var(--primaryContainer)
+        
+    }
+
+    .bar{
+        text-align: center;
+        font-size: 80px;
+        position: relative;
+        justify-content: center;
+        
+    }
+
+
+
+.img-holder2{
+    width: 85vw;
+    height: 87vw;
+    background: var(--primary-color);
+    border-style: solid;
+border-radius: 5%;
+position: relative;
+justify-content: space-around;
+flex-direction: column;
+margin: 8vw;
+background-image:url(../Media/images/cover2.jpg) ;
+background-size: cover;
+background-position: center;}
+
+
+.about-button p{
+    font-size: 1rem;
+}
+.about-button button{
+
+    font-size: 1.5rem;
+  margin-top: 15%;
+  padding: 0.35rem 0.5rem;
+
+}
+    
+.home-button p{
+    font-size: 1rem;
+}
+
+.home-button button{
+
+    font-size: 1.5rem;
+    margin-top: 15%;
+    padding: 0.35rem 0.5rem;
+ }
+
+ @keyframes changeBG{
+    0%{background-color:var(--onBackground-color) }
+    25%{background-color: var(--onPrimaryColor)}
+    50%{background-color: var(--onPrimaryContainer);}
+    75%{background-color: var(--primary-color);}
+    100%{background-color: var(--primaryContainer);}
+ }
+    /***************************** DESKTOP VERSION ********************/
+
+    @media screen and (width >= 1366px){
+ 
+        html{
+           font-size: 125%;
+        }
+       
+        .flex-img{
+           background: black;
+        }
+           
+    
+       
+        .flex-img{
+           margin-top: 5%;
+           
+       }
+       
+      
+       .bar{
+        margin-top: 2%;
+       }
+       
+
+
+      
+
+    }

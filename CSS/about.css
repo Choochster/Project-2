@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    }
+    
+:root{
+
+    --primary-color: #9fcaff;
+    --onPrimaryColor: #003258;
+    
+    --primaryContainer: #00497d;
+    --onPrimaryContainer: #d1e4ff;
+    
+    --background-color: #1a1c1e;
+    --onBackground-color: #e2e2e6;
+
+
+
+}
+
+    .flex-container{
+    
+    display: flex;
+    width: 100vw;
+    height: 400vh;
+    background: var(--background-color);
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--onPrimaryContainer);
+    
+    }
+    
+    
+    .item{
+    width: 100px;
+    height: 50px;
+    background: var(--primaryContainer);
+    margin: 1vw;
+    text-align: center;
+    
+    
+    
+    }
+
+
+    .img-holder{
+        width: 85vw;
+        height: 120vw;
+        background: var(--primary-color);
+        border-style: solid;
+    border-radius: 5%;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+margin: 8vw;
+background-image:url(../Media/images/jerseytwo.jpg) ;
+background-size: cover;
+background-position: center;
+
+
+    }
+
+
+    .img-holder2{
+        width: 85vw;
+        height: 120vw;
+        background: var(--primary-color);
+        border-style: solid;
+    border-radius: 5%;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+margin: 8vw;
+background-image:url(../Media/images/jerseythreenew.jpg) ;
+background-size: cover;
+background-position: center;
+
+}
+
+.img-holder3{
+    width: 85vw;
+    height: 120vw;
+    background: var(--primary-color);
+    border-style: solid;
+border-radius: 5%;
+position: relative;
+justify-content: space-around;
+flex-direction: column;
+margin: 8vw;
+background-image:url(../Media/images/jerseyone.jpg) ;
+background-size: cover;
+background-position: center;
+
+
+
+}
+
+
+.img-holder4{
+
+    width: 85vw;
+    height: 100vw;
+    background: var(--primary-color);
+    border-style: solid;
+border-radius: 5%;
+position: relative;
+justify-content: space-around;
+flex-direction: column;
+margin: 8vw;
+background-image:url(../Media/images/jerseyfour.jpg) ;
+background-size: cover;
+background-position: center;
+}
+
+
+.header{
+    background-color: var(--primary-color);
+    animation: changeBG 10s 3s infinite;
+}
+
+.bar{
+        width: 2000px;
+        height: 100px;
+        background: var(--primaryContainer)
+        
+    }
+
+.bar{
+    text-align: center;
+    font-size: 38px;
+    position: relative;
+    justify-content: center;
+    
+}
+
+    .text{
+
+        color: var(--onBackground-color);
+    }
+.text2{
+    color: var(--onBackground-color);
+}
+
+.p{
+    font-size: 20rem;
+    text-align: center;
+    margin: 8vw;
+}
+
+@keyframes changeBG{
+    0%{background-color:var(--onBackground-color) }
+    25%{background-color: var(--onPrimaryColor)}
+    50%{background-color: var(--onPrimaryContainer);}
+    75%{background-color: var(--primary-color);}
+    100%{background-color: var(--primaryContainer);}
+}
+
+    /***************************** DESKTOP VERSION ********************/
+
+    @media screen and (width >= 1366px){
+ 
+        html{
+           font-size: 125%;
+        }
+       
+        .flex-img{
+           background: var(--background-color)
+           
+        }
+           
+       
+       
+        .flex-img{
+           margin-top: 2%;
+           
+       }
+       
+       .next-button{
+           margin-bottom: 20%;
+           }
+       
+       .img-holder{
+        width: 42vw;
+        height: 56vw;
+        border-style: solid;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+        position: relative;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 8vw;
+        background-image:url(../Media/images/jerseytwo.jpg) ;
+        background-size: contain;
+        background-position: center;
+       }
+
+       .img-holder2{
+     
+        width: 42vw;
+        height: 60vw;
+        background: var(--primary-color);
+        border-style: solid;
+        border-radius: 5%;
+        position: relative;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-right: 8;
+        margin-left: auto;
+
+        background-image:url(../Media/images/jerseythreenew.jpg) ;
+        background-size: contain;
+        background-position: center;
+
+       }
+
+
+
+       .img-holder3{
+        align-items: center;
+       
+        width: 42vw;
+        height: 60vw;
+        background: var(--primary-color);
+        border-style: solid;
+      
+        border-radius: 5%;
+        position: relative;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 8vw;
+        background-image:url(../Media/images/jerseyone.jpg) ;
+        background-size: contain;
+        background-position: center;
+    
+    
+    
+    }
+
+
+    .img-holder4{
+        width: 42vw;
+        height: 60vw;
+        background: var(--primary-color);
+        border-style: solid;
+        border-radius: 5%;
+        position: relative;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-right: 8;
+        margin-left: auto;
+        background-image:url(../Media/images/jerseyfour.jpg) ;
+        background-size: contain;
+        background-position: center;
+    
+    
+    
+    }
+
+
+
+
+
+
+       .flex-container{
+    
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        background: var(--background-color);
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+        
+        }
+
+
+        .bar{
+            text-align: center;
+            font-size: 80px;
+            position: relative;
+            justify-content: center;
+        }
+      
+
+    }
